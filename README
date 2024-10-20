@@ -1,0 +1,14 @@
+
+Generic single-database configuration.
+
+alembic revision --autogenerate -m "initial migration"
+
+alembic revision  -m "init migration"
+
+alembic upgrade head                        # обновляет все версии в папке version
+
+alembic upgrade 6451631ba590                      #  обновляет конкретную
+версию (этот номер лежит в файле версии (revision: str = '6451631ba590')
+
+Так как я устанавливал и инициировал алембик из корневой папки проекта, а не из папки app, поэтому
+у меня база сформировалась не в папке app, а рядом с этой папкой в корневой папке проекта.
